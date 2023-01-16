@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo ed hover</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+         div>p{/* esse maior que (>) é usado para dizer neste caso, que o paragrafo dentro da div vai fazer algo */
+            display: none;
+
+         }
+
+         div:hover >p{ /* o paragrafo da div vai executar a funçao dentro das chaves */
+            display:block ;
+            color: rgb(251, 251, 253);
+            background-color: rgb(84, 84, 224);
+            width: 300px;
+         }
+
+        div:hover {
+            color: rgb(180, 146, 211);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exempo de hover</h1>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div>
+        passe o mouse aqui
+        <p>Texto escondido</p>
+    </div>
+    <p>fim do Exemplo</p>
+    
+</body>
+</html>

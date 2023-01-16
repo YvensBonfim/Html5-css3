@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementos</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(122, 122, 182);
+            text-decoration: none;
+            font-weight: bold;
+        }
+     li> a:visited {
+            color: rgb(112, 107, 107);
+            
+        }
+        li> a:hover {
+            color: rgb(37, 34, 58);
+            text-decoration: rgb(163, 115, 207);
+        }
+       li> a:active {
+            color: rgb(133, 165, 192);
+        }
+        
+        a::after{
+            content: ' [link]';
+            color: black;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalzando Links</h1>
+    <ul>
+        <li><a href="https://github.com/YvensBonfim" target="_blank">repositorio do GitHub</a></li>
+        <li><a href="https://www.instagram.com/pseudovinci/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/uas/login-submit" target="_blank">Linkedin</a></li>
+    </ul>
+    
+</body>
+</html>
